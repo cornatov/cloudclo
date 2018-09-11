@@ -3,16 +3,8 @@ class CampaignMailer < ApplicationMailer
 
 	def send_campaign(campaign)
 		@campaign = campaign
-		mail(to: "cornatov@buffalo.edu", subject: "Add email", body: '#{campaign.to_email}' )
+		mail(to: "cornatov@buffalo.edu", subject: "Email sent from", body: @campaign.to_email)
 	end
-
-	def send_campaign(campaign)
-		@campaign = campaign
-		mail(to: "cornatov@buffalo.edu", subject: "Thank you for joining", body: '#{campaign.to_email}')
-	end
-
-
-
 
 
 end

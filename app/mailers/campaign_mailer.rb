@@ -3,7 +3,7 @@ class CampaignMailer < ApplicationMailer
 
 	def send_campaign(campaign)
 		@campaign = campaign
-		mail(to: @campaign.to_email, subject: @campaign.subject, body: @campaign.body)
+		mail(to: @campaign.to_email)
 	end
 
 end

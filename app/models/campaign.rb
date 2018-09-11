@@ -1,7 +1,5 @@
 class Campaign < ApplicationRecord
 	validates :to_email, presence: true
-	validates :subject, presence: true
-	validates :body, presence: true
 
 	# Callbacks
 	after_create :send_campaign

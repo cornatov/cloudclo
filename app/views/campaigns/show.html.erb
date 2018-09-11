@@ -5,15 +5,6 @@
   <%= @campaign.to_email %>
 </p>
 
-<p>
-  <strong>Subject:</strong>
-  <%= @campaign.subject %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @campaign.body %> 
-</p>
 
 <%= link_to 'Edit', edit_campaign_path(@campaign) %> |
 <%= link_to 'Back', campaigns_path %>

@@ -14,13 +14,42 @@
  *= require_self
  */
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 
-
- body {
-   background-color: purple;
-   color:black;
-   text-align: center;
+body {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(backg.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+
+/*//////////////////*/
+
 
 .middle {
   top: 50%;
@@ -29,14 +58,15 @@
   text-align: center;
   transform: translate(-50%, -50%)
 
+
 }
 
 .title {
  
   text-align: center;
   padding-top: 10%;
-  font-family: 'Shrikhand', cursive;
-  color:blue;
+  font-family: 'Baloo Tammudu', cursive;
+  color:white;
 
   
 

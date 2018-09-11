@@ -1,21 +1,30 @@
-<h1>Contact Us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- tag for IE -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body style="background-color: purple;">
 
-<%= flash[:notice] %>
-
-<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-<div class="row">
-  <div class="form-group">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
-  </div>
+<div class= "title">
+  <h1><strong>Welcome to Cloud Clothing!</strong></h1>
+  <h2>We are the Uber of Cloth renting.</h2>
+  <h2>Why buy when you can rent the latest fashion and have a endless wardrobe</h2>
 </div>
-<%= form.submit "Send", class: "form_label" %>
-<% end %>
+  
+<div class="middle">
+  <a href="/campaigns/new" button type="button" class="btn btn-primary btn-lg btn-block">Stay u!</a></button>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
+

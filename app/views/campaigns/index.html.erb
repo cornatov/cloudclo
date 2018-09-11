@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<div class = "title"><h1>Past Submittals:</h1></div>
+
+
+<table align="center">
+
+
+  <tbody>
+    <% @campaigns.each do |campaign| %>
+      <tr>
+        <td><%= campaign.to_email %></td>
+        <td><%= campaign.subject %></td>
+        <td><%= campaign.body %></td>
+        <td><%= link_to 'Show', campaign %></td>
+        <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
+        <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<strong><%= link_to 'New Campaign', new_campaign_path %></strong>

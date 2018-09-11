@@ -68,6 +68,13 @@ p {
   font-family: 'Baloo Tammudu', cursive;
   color:white;
 
-  
+}
+
+
+.confirm {
+ 
+  text-align: center;
+  padding-top: 10%;
+  color:white;
 
 }

@@ -1,10 +1,17 @@
-<p id="notice"><%= notice %></p>
-
+<p id="notice">
+<div class = "confirm">
 <p>
-  <strong>To email:</strong>
+  <h3>Updates will be sent to:</h3>
   <%= @campaign.to_email %>
 </p>
+<h2><strong>Thank you for your interest!<br> You have been added to our listing.
+<br>
+<a href="/" button type="button" class="btn btn-success">Go Back</a></button>
+</div></h2></p></strong><%= notice %>
 
 
-<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
-<%= link_to 'Back', campaigns_path %>
+
+
+
+<% link_to 'Edit', edit_campaign_path(@campaign) %> |
+

@@ -16,7 +16,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 
-body {
+/*body {
   background: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -24,8 +24,31 @@ body {
     ),
     url(backg.jpg);
   background-size: cover;
+  position: relative;
   font-family: 'Source Sans Pro', sans-serif;
-}
+}*/
+
+
+/*body {
+
+  background-image: url(backgroundlogo.png),
+      url(backg.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right;
+  font-family: 'Source Sans Pro', sans-serif;
+}*/
+
+
+body {
+    background: url(backgroundlogo.png) top no-repeat, url(backg.jpg), top no-repeat, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 15px;
+    background-size: 200px, cover;
+  }
 
 header {
   position: absolute;
@@ -48,11 +71,12 @@ p {
 
 
 
+
 /*//////////////////*/
 
 
 .middle {
-  top: 50%;
+  top: 55%;
   left: 50%;
   position: absolute;
   text-align: center;
@@ -75,8 +99,8 @@ p {
   text-align: center;
   color:white;
 
-
 }
+
 
 
 .confirm {
@@ -84,7 +108,6 @@ p {
   text-align: center;
   padding-top: 10%;
   color:white;
-
 }
 
 

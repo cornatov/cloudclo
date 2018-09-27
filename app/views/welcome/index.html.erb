@@ -3,21 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <!-- tag for IE -->
+ <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "shortcut icon" href = "logo.png">
+<%= csrf_meta_tags %>
 </head>
 <body>
-
 <div class= "title">
   <h1><strong>Welcome to Cloud Clothing!</strong></h1>
+  <h2>We are the Uber of Cloth renting.</h2>
+  <h2>We are the Uber of Cloth renting.</h2>
   <h2>We are the Uber of Cloth renting.</h2>
   <h2>Why buy when you can rent the latest fashion and have a endless wardrobe</h2>
 </div>
   
 <div class="middle">
   <a href="/campaigns/new" button type="button" class="btn btn-primary btn-lg btn-block">Stay u!</a></button>
+  <img src="backgroundlogo.png" style="position: absolute; top: 30; left: 70;"/>
 </div>
 
 
